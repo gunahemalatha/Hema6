@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <header class="main-header">
+        <img src="logo.png" class="logo">
+        <ul>
+            <li><a href="#page1">Home</a></li>
+            <li><a href="#page3">Product</a></li>
+            <li><a href="#page2">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+           
+        </ul>
+    </header>
+    <div class="base"></div>
+    <section>
+        <div class="contact">
+            <form action="" id="form" class="form">
+                <h2>CONTACT</h2>
+                <div class="form-control">
+                    <label for="username">Name</label>
+                    <input type="text" id="name" placeholder="Enter username"/>
+                    <span style="color: red;"  id="name_error"></span>
+                </div>
+                <div class="form-control">
+                    <label for="email">Email</label>
+                    <input type="text" id="email" placeholder="Enter email"/>
+                    <span  style="color: red;" id="email_error"></span>
+                </div>
+                <div class="form-control">
+                    <label for="address">address</label>
+                    <input type="text" id="address" placeholder="Enter address"/>
+                    <span  style="color: red;" id="address_error"></span>
+                </div>
+                <div class="form-control">
+                    <label for="order">order</label>
+                    <input type="text" id="order" placeholder="Enter order"/>
+                    <span  style="color: red;" id="order_error"></span>
+                </div>
+                <button type="submit" onclick="sub()">send message</button>
+            </form>
+    </section>
+    <script>
+        const name = document.getElementById('name');
+       const email = document.getElementById('email');
+       const address = document.getElementById('address');
+       const order = document.getElementById('order');
+        const form = document.getElementById('form');
+
+       const name_error = document.getElementById('name_error');
+
+       const email_error = document.getElementById('email_error');
+
+        const address_error = document.getElementById('address_error');
+        const order_error = document.getElementById('order_error');
+
+form.addEventListener('submit',(e)=>
+{  
+    var email_check = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+    var status = false;
+    if(name.value === '' || name.value == null)
+        {
+            e.preventDefault();
+            name_error.innerHTML = "Name is required";
+            status = false;
+        }else{
+            name_error.innerHTML = "";
+            status= true;
+        }
+     if(!email.value.match(email_check))
+             {
+              e.preventDefault();
+            email_error.innerHTML = "valid email is required";
+            status = false;
+          }else
+          {
+             email_error.innerHTML = "";
+             status = true;
+          }
+          if(address.value === '' || address.value == null)
+        {
+            e.preventDefault();
+            address_error.innerHTML = "address is required";
+            status = false;
+        }else{
+            address_error.innerHTML = "";
+            status= true;
+        }
+        if(order.value === '' || order.value == null)
+        {
+            e.preventDefault();
+            order_error.innerHTML = "order is required";
+            status = false;
+        }else{
+            order_error.innerHTML = "";
+            status= true;
+        }
+         
+   
+    if(status == true){
+        alert("your order is placed");
+        window.location.assign("bthome.html")
+
+    }
+    else{
+        alert("invalid message")
+    }
+})
+    </script>
+    </body>
+</html>

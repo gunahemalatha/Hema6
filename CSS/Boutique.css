@@ -1,0 +1,421 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.container{
+    width: 100%;
+}
+
+.container .page1{
+    width: 100%;
+    height: 100vh;
+    background: url(../Images/p1.png) no-repeat;
+    background-size: cover;
+}
+
+nav{
+    background-color: steelblue;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px 30px;
+}
+
+nav img{
+    width: 90px;
+    height: 90px;
+}
+
+nav .menu ul{
+    display: flex;
+}
+
+nav .menu ul li{
+    list-style: none;
+}
+
+a{
+    color: black;
+    padding: 0 20px;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+}
+
+a:hover{
+    color: white;
+}
+
+.page1 .content{
+    text-align: end;
+    margin-top: 300px;
+    margin-right: 40px;
+    color: white;
+}
+
+.page1 .content a{
+    padding: 20px;
+    border: 1px solid white;
+    color: white;
+    border-radius: 10px;
+    background: black;
+}
+
+.page1 .content a:hover{
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+}
+
+.container .page2{
+    width: 100%;
+    height: 100vh;
+    background: url(../Images/p2.png) no-repeat;
+    background-size: cover;
+}
+
+.page2 .box{
+    width: 40%;
+    height: 40%;
+    margin-left: 58%;
+    position: relative;
+    top: 100px;
+}
+
+.page2 .box .content{
+    padding: 15px 30px;
+    font-size: larger;
+}
+
+.page2 .box .content p{
+    color: white;
+}
+
+.container .page3{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(steelblue, hotpink);
+}
+
+.page3 h1{
+    padding: 30px;
+    text-align: center;
+    font-size: 3rem;
+}
+
+.page3 .box{
+    width: 25%;
+    height: 300px;
+    border: 1px solid black;
+    float: left;
+    margin: 60px 30px 10px 65px;
+    border-radius: 10px;
+}
+
+.page3 .box a{
+    position: relative;
+    top: 250px;
+    margin-left: 110px;
+    border: 1px solid black;
+    padding: 10px 10px 10px 10px;
+    border-radius: 10px;
+    background-color: white;
+    color: black;
+}
+
+.page3 .box1{
+    background: url(../Images/Dresses.png) no-repeat;
+    background-size: cover;
+    background-position-x: center;
+}
+
+.page3 .box2{
+    background: url(../Images/Bags.png) no-repeat;
+    background-size: cover;
+    background-position-x: center;
+}
+
+.page3 .box3{
+    background: url(../Images/Watches.png) no-repeat;
+    background-size: cover;
+    background-position-x: center;
+}
+
+.page3 .box a:hover{
+    color: whitesmoke;
+    background-color: red;
+}
+
+.main-header1{
+    background-color: aqua;
+}
+.main-header1 .dress{
+    height: 100vh;
+    background-color: aqua;
+}
+
+.main-header1 .dress .box{
+    width: 300px;
+    height: 300px;
+    float: left;
+    margin-left: 95px;
+    margin-top: 100px;
+    background-color:lightblue;
+    border-radius: 10px;
+}
+
+.main-header1 .dress h1{
+    color: crimson;
+    padding: 20px;
+    margin-left: 540px;
+}
+
+.main-header1 .dress .box img{
+    width: 300px;
+    height: 300px;
+}
+
+.main-header1 .dress .box .content{
+    color: black;
+    margin-left: 120px;
+}
+
+.main-header1{
+    background-color: aqua;
+}
+.main-header1 .bag{
+    height: 100vh;
+    background-color: aqua;
+}
+
+.main-header1 .bag .box{
+    width: 300px;
+    height: 300px;
+    float: left;
+    margin-left: 95px;
+    margin-top: 100px;
+}
+
+.main-header1 .bag h1{
+    color: crimson;
+    padding: 20px;
+    margin-left: 540px;
+}
+
+.main-header1 .bag .box img{
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    scroll-behavior: smooth;
+}
+
+.main-header1 .bag .box .content{
+    color: black;
+    margin-left: 110px;
+}
+
+.main-header1{
+    background-color: yellowgreen;
+}
+.main-header1 .watch{
+    height: 100vh;
+    background-color: aqua;
+}
+
+
+.main-header1 .watch .box{
+    width: 300px;
+    height: 300px;
+    float: left;
+    margin-left: 95px;
+    margin-top: 100px;
+    border-radius: 10px;
+}
+
+.main-header1 .watch h1{
+    color: crimson;
+    padding: 20px;
+    margin-left: 540px;
+}
+
+.main-header1 .watch .box img{
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.main-header1 .watch .box .content{
+    color: black;   
+    margin-left: 100px;
+}
+.container .page4{
+    width: 100%;
+    height: 100vh;
+    background-color: lightpink;
+}
+
+.container .page5{
+    width: 100%;
+    height: 100vh;
+    background-color: lightgreen;
+    background-size: cover;
+}
+.page5 .box h1{
+    text-align: center;
+    font-size: 60px;
+}
+.page5 .box{
+    width: 80%;
+    height: 40%;
+    margin-left: 60px;
+    position: relative;
+    top: 100px;
+}
+.page5 .box .content p{
+    font-size: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media all and (max-width:500px){
+    nav .menu ul{
+        display: none;
+    }
+    .page1 .content{
+        margin: 20px 50px 0 0;
+        font-size: medium;
+        margin-left: 10px;
+    }
+
+    .page2 .box{
+        width: 5%;
+        height: 50%;
+    }
+    .page2 .box .content{
+        font-size: medium;
+        margin-left: -110px;
+    }
+    .page2 .box .content p{
+        color: black;
+    }
+    
+    .container .page3{
+        width: 100%;
+        height: 185vh;
+    }
+    .page3 .box{
+        width: 80%;
+        margin-left: 40px;
+    }
+
+    .main-header1 .dress .box{
+        margin-top: 10px;
+        width: 160px;
+        height: 160px;
+        margin-left: 30px;
+        float: none;
+    }
+
+
+    .main-header1 .dress .box img{
+        width: 160px;
+        height: 160px;
+    }
+    .main-header1 .dress h1{
+        margin-left: 80px;
+    }
+    .main-header1 .dress .box .content{
+        margin-left: 200px;
+        margin-top: -100px;
+    }
+    .main-header1{
+        background-color: white
+        ;
+    }
+    .main-header1 .bag .box{
+        margin-top: 10px;
+        width: 160px;
+        height: 160px;
+        margin-left: 30px;
+        float: none;
+    }
+
+    .main-header1 .bag .box img{
+        width: 160px;
+        height: 160px;
+    }
+    .main-header1 .bag h1{
+        margin-left: 80px;
+    }
+    .main-header1 .bag .box .content{
+        margin-left: 200px;
+        margin-top: -100px;
+    }
+    .main-header1{
+        background-color: white;
+    }
+    .main-header1 .watch .box{
+        margin-top: 10px;
+        width: 160px;
+        height: 160px;
+        margin-left: 30px;
+        float: none;
+    }
+
+    .main-header1 .watch .box img{
+        width: 160px;
+        height: 160px;
+    }
+    .main-header1 .watch h1{
+        margin-left: 80px;
+    }
+    .main-header1 .watch .box .content{
+        margin-left: 200px;
+        margin-top: -100px;
+    }
+    .main-header1{
+        background-color: white;
+    }
+}
+.page4 .box{
+    width: 5%;
+    height: 30%;
+    margin-right: 70px;
+}
+.page4 .box .content p{
+    color: black;
+    margin-left: 55px;
+}
+.page5 .box{
+width: 5%;
+height:40%;
+}
+.page5 .box .content{
+    margin-left: 5px;
+} 
+.page5 .box .content p{
+    font-size: 20px;
+     margin-left: 15px;
+}
+
+
+
+
+
+
